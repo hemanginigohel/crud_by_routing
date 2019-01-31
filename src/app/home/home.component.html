@@ -1,0 +1,44 @@
+<div  [ngClass]="{'mainclass':true}" *ngIf="fetchdata==null" >
+  <br><br>
+  Please wait while we are getting user details...
+</div>
+
+
+<div class="mainclass">
+  <div *ngIf="fetchdata!=null" class=tab-row>
+
+    <!------------header------------------------>
+
+    <div class="cellhead">Firstname</div>
+    <div class="cellhead">Lastname</div>
+    <div class="cellhead">Avatar</div>
+    <div class="cellhead-border">Action</div>
+    <div style="clear: both"></div>
+
+    <!-------------table-details-------------->
+     
+    <div *ngFor="let record of fetchdata.data" class="tab-row">
+      <div class="cell">{{record.first_name}}</div>
+      <div class="cell">{{record.last_name}}</div>
+      <div class="cell"><img src="{{record.avatar}}" height="40px" width="40px" /></div>
+      <div class="cellborder"> <a  class="linkclass"  routerLink="/record-list/{{record.id}}">Edit</a> | <a (click)="ondelete(record)"
+          class="linkclass">Delete</a></div>
+    </div>
+
+    
+   
+    <!-------------pagination----------->
+
+    <div class="pages" *ngIf="fetchdata.data!=null">
+      <ng-container *ngFor="let record of page_array" class="pages" >
+        <button (click)="recordlist(record)" class="normalbutton" [ngClass]="{'active':(fetchdata.data!=null&&record==fetchdata.page)}" >{{record}}</button>
+      </ng-container>
+      &nbsp;
+      <ng-container *ngIf="pagination">
+        Fetching data..
+      </ng-container>    
+    </div>
+  </div>
+  
+  
+</div>

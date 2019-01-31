@@ -1,0 +1,131 @@
+.mainclass{
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-left: 12%;
+}
+.tab-row{
+    float: left;
+    width: 1000px;
+}
+.cellhead {
+border:  solid #d3d3d3;
+float: left;
+padding: 10px;
+width: 20%;
+font-weight: bold;
+border-left-width:0.5px;
+border-top-width: 0.5px;
+border-bottom-width:0.5px; 
+border-right-width:0px; 
+}
+.cellhead-border{
+border:  solid #d3d3d3;
+float: left;
+padding: 10px;
+width: 20%;
+font-weight: bold;
+border-left-width:0.5px;
+border-top-width: 0.5px;
+border-bottom-width:0.5px; 
+border-right-width:0.5px; 
+}
+.cell{
+border:  solid #d3d3d3;
+float: left;
+padding: 10px;
+width: 20%;
+height: 45px;
+border-left-width:0.5px;
+border-top-width: 0px;
+border-bottom-width:0.5px; 
+border-right-width:0px;
+}
+.cellborder{
+border: solid #d3d3d3;
+float: left;
+padding: 10px;
+width: 20%;
+height: 45px;
+border-left-width:0.5px;
+border-top-width: 0px;
+border-bottom-width:0.5px; 
+border-right-width:0.5px;
+}
+.pages{
+    float:left;
+    margin:10px;
+    margin-left: 0px; 
+}
+.disable{
+    color:grey;
+}
+.active{
+    color:white;
+    background-color:gray;
+}
+.darkbutton{
+    background-color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    border:#d3d3d3 1px solid ;
+}
+.darkbutton:hover{
+    background-color: #708090;
+    border-radius: 5px;
+    color:white;
+    font-size: 15px;
+    padding: 5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.normalbutton{
+    
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-right: 2px;
+    }
+.normalbutton:hover{
+    margin-left: 0px;
+    margin-right :2px;
+    background-color:#d3d3d3;
+    color:black;
+    }
+.labelclass{
+        padding: 5px;
+        margin-left: 0px;
+        margin-bottom:10px;
+    }
+    .linkclass{
+        color: black;
+        text-decoration-color:black;
+    }
+    .linkclass:hover{
+        color: black;
+    }
+    a:link{
+        color:black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    a:visited{
+        color:black;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    a:hover {
+        color: blue;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    

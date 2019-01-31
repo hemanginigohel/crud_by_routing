@@ -1,0 +1,19 @@
+<div class="mainclass">
+    <div *ngIf="!idval && id!=new">
+        <h3>Edit User</h3>
+    </div>
+    <div *ngIf="idval">
+        <h3>Add User</h3>
+    </div>
+    <form >
+        <label class="labelclass"> First Name :</label><br><input type="text"  class="formclass" placeholder="Enter First Name"
+            name="data" [(ngModel)]="newdata.first_name" id="fname"><br>
+        <label class="labelclass"> Last Name :</label><br><input type="text" class="formclass" placeholder="Enter Last Name"
+            name="data2"  id="lname" [(ngModel)]="newdata.last_name"><br>
+        <div *ngIf="!idval && id!=new"><label class="labelclass" [ngStyle]="{'font-style': bold}"> Avatar : <br><img src="{{newdata.avatar}}" ></label><br><br><br></div>
+        <button class="darkbutton" (click)="onsubmit(newdata)">{{waitmessage}}</button>
+        <button class="normalbutton" routerLink="/record-list">Cancel</button>
+    </form>
+
+</div>
+        

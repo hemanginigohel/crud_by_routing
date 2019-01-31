@@ -1,0 +1,15 @@
+.mainclass{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.link{
+    font-weight: bold;
+    color: gray;
+    text-decoration-line: none;
+}
+.active_link {
+    font-weight: bold;
+    color: black;
+    text-decoration-line: none;
+}
